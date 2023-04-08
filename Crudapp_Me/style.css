@@ -1,0 +1,196 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    transition: all ease-in-out .3s;
+}
+body{
+    font-family: 'Roboto', sans-serif;
+    background-color: aliceblue;
+    background-image:url(images/beautiful-arrangement-different-books.jpg);
+    background-size: 100% 100%;
+    height: 100vh;
+    overflow: auto;
+}
+.contain{
+    padding-right: 100px;
+    padding-right: 100px;
+}
+button{
+    text-transform: capitalize;
+    font-weight: 500;
+    border-radius: 8px;
+    outline:none;
+}
+.head{
+    font-size:40px;
+    font-weight:700;
+    position:relative;
+    width:fit-content;
+}
+.head::after{
+    content:"";
+    position:absolute;
+    left:0;
+    bottom:0px;
+    background-color:rgb(122, 72, 7);
+    height:5px;
+    width:300px;
+    border-radius:20px;
+}
+/*
+important make sure that this will be done
+*/
+.read{
+    background-color:burlywood  !important ;
+}
+
+main .container{
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    gap:10px;
+}
+header .contain{
+display: flex;
+align-items: center;
+justify-content: center;
+padding-top:20px;
+padding-bottom:20px;
+}
+header .contain h1{
+font-size:45px;
+color:rgb(122, 72, 7);
+text-transform: uppercase;
+font-weight: 800;
+}
+.data .contain{
+    display:grid;
+    align-items:start;
+    justify-content:stretch;
+    gap:10px;
+}
+.data .contain form{
+    display:grid;
+    align-items:stretch;
+    justify-content:space-between;
+    gap:20px;
+}
+.data .contain form .inputs{
+    display: grid;
+    align-items:center;
+    grid-template-columns: repeat(3,1fr);
+    gap:30px;
+}
+.data .contain form .inputs div{
+display:flex;
+align-items: center;
+justify-content: flex-start;
+gap:30px;
+}
+.data .contain form .inputs div span{
+    font-size: 20px;
+}
+.data .contain form .inputs div input{
+    padding:8px;
+    outline: none;
+    border:1px solid #ffff;
+    font-size:18px;
+    width:100%;
+    color:black;
+
+}
+.data .contain form .inputs div input:focus{
+    border-color: bisque;
+}
+.data .contain form .inputs div input[type='checkbox']{
+    width:fit-content;
+}
+.data .contain form btns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+.data .contain form .btns button{
+    padding:8px 30px;
+    font-size: 20px;
+    background-color:rgb(122, 72, 7);
+    color: aliceblue;
+    border: 3px solid oldlace;
+}
+.data .contain form .btns button:hover{
+    background-color: transparent;
+    cursor:pointer;
+    color:rgb(122, 72, 7) ;
+}
+.Book_List .contain{
+    display:grid;
+    align-items: center;
+    justify-content: stretch;
+    gap: 50px;
+}
+.Book_List .contain table{
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+
+}
+.Book_List .contain table tbody{
+    display: grid;
+    align-items: center;
+    justify-content: stretch;
+    background-color: aliceblue;
+
+}
+.Book_List .contain table thead{
+    border-top: 1px solid rgb(122, 72, 7);
+    border-bottom: 1px solid rgb(122, 72, 7);
+}
+.Book_List .contain table tr{
+    display: grid;
+    font-size: 20x;
+    align-items: flex-start;
+    justify-content: space-between;
+    grid-template-columns: 5% 15% 20% 5% 10% 20% 1fr;
+    gap:20px;
+    padding:10px 0;
+}
+.Book_List .contain table td,
+.Book_List .contain table th{
+    display: flex;
+    align-items: flex-start;
+}
+.Book_List .contain table td:last-child,
+.Book_List .contain table th:last-child{
+justify-content: flex-end;
+}
+.Book_List .contain table th{
+    font-size: 20px;
+}
+.Book_List .contain table td{
+    font-size:20px;
+}
+.Book_List .contain table tr td img{
+    width: 100%;
+}
+.Book_List .contain table tr td button{
+    padding:8px 20px;
+    font-size: 18px;
+    border:2px solid rgb(122, 72, 7);
+    background-color: rgb(122, 72, 7) ;
+    color: aliceblue;
+}
+.Book_List .contain table tr td button:hover{
+    background-color: transparent;
+    cursor:pointer;
+    color:rgb(122, 72, 7) ;
+}
+.Book_List .contain table .rate{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap:5px;
+}
+.Book_List .contain table .rate img{
+    width:20px;
+}
